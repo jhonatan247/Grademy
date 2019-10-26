@@ -1,7 +1,3 @@
-.dark-purple{
-    color: #542E78;
-}
-
 .red{
     /* border: 1px solid red; */
     background-color: #fff;
@@ -25,11 +21,6 @@
     display: flex;
 }
 
-.specialist{
-border-radius: 50%;
-max-width: 50px;;
-}
-
 .kid-photo img{
     margin: auto;
     border-radius: 50%;
@@ -49,6 +40,10 @@ max-width: 50px;;
 
 .char{
     min-height: 200px;;
+}
+
+.dark-purple{
+    color: #542E78;
 }
 
 .first , .third{

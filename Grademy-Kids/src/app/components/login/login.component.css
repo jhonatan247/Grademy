@@ -11,6 +11,16 @@
     min-height: 600px;
 }
 
+.login-button{
+    background-color: #542E78;
+                      border: none
+}
+
+.login-button:hover{
+    background-color: #7E3B91;
+    box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.35);  
+} 
+
 .button-container{
     text-align: center;
 }

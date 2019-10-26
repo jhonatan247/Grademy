@@ -25,6 +25,8 @@ export class HomeParentComponent implements OnInit {
 				{ y: 55, label: "Mango" },
 				{ y: 50, label: "Orange" },
 				{ y: 65, label: "Banana" },
+				{ y: 28, label: "Grapes" },
+				{ y: 34, label: "Lychee" }
 
 			]
 		}]

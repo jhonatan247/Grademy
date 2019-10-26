@@ -10,10 +10,12 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 
-import { RegisterSpecialistComponent } from './components/register-specialist/register-specialist.component';
+import { RegisterSpecialistComponent } from './components/specialist/register-specialist/register-specialist.component';
 import { RegisterKidComponent } from './components/register-kid/register-kid.component';
 import { RegisterParentComponent } from './components/parent/register-parent/register-parent.component';
 import { HomeParentComponent } from './components/parent/home-parent/home-parent.component';
+import { ReportComponent } from './components/parent/report/report.component';
+import { HomeSpecialistComponent } from './components/specialist/home-specialist/home-specialist.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HomeParentComponent } from './components/parent/home-parent/home-parent
     RegisterSpecialistComponent,
     RegisterKidComponent,
     RegisterParentComponent,
-    HomeParentComponent
+    HomeParentComponent,
+    ReportComponent,
+    HomeSpecialistComponent
   ],
   imports: [
     BrowserModule,
