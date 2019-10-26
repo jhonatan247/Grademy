@@ -1,0 +1,76 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-6  fulltext-center ">
+      <div class="name red my-3 p-3">
+        <div class="kid-photo  p-3 ">
+          <img
+            style="width: 150px;"
+            src="assets/img/profile.png "
+            alt="profile photo"
+          />
+        </div>
+        <h6>Nombre</h6>
+      </div>
+      <div class="description my-3  p-3 red">
+        <h6>Description</h6>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugit
+          iusto vel, quasi explicabo, unde, aspernatur at laudantium quos quae
+          nulla porro veritatis id alias odio est voluptate? Vel, ex.
+        </p>
+      </div>
+      <div class="carrousel red my-3 p-3">
+        <h6>Conoce lo que ha hecho tu hijo/a</h6>
+        <div class="draws-container p-2">
+          <div class="draw" *ngFor="let item of [1]">
+               <img
+                    (click)="modal()"
+                    style="width: 50px;"
+                    src="assets/img/kids-draw.jpg"
+                    alt="draw"
+                  />
+            
+          </div>
+        </div>
+      </div>
+      <div class="historical red my-3 p-3">
+        <div class="historic row mb-3 mx-3 p-2" *ngFor="let item of [1,1,1,1] ">
+<hr>
+          <div class=" col-2 first"><i class="fas fa-question"></i></div>
+          <div class=" col-8 second">
+            <p>description</p>
+          </div>
+          <div class=" col-2 third"  >
+                <img
+                style="width: 50px;
+                border: 1px solid #f2f2f2;"
+                src="assets/img/kids-draw.jpg"
+                alt="draw"
+              />
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 text-center">
+      <div class="char red my-3 p-3">
+        <h6>Grafica de seguimiento</h6>
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+      </div>
+
+      <div class="general-description my-3 p-3   red">
+          <h6>Anaisis</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+          voluptatum eius a nisi minus voluptatibus reiciendis, rerum quod
+          ipsam, rem autem, ab itaque suscipit illum ipsum esse sunt asperiores
+          pariatur?
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+

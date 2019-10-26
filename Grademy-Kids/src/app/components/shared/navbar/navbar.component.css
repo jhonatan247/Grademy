@@ -1,0 +1,22 @@
+.nav-container{
+    background-color: #16C490;
+    height: 70px;
+    padding-right: 5%;
+}
+
+.user-info{
+    display: flex;
+    height: 100%;
+    float: right;
+}
+
+.photo{
+    margin: auto 10px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+}

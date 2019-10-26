@@ -12,7 +12,8 @@ import { RegisterComponent } from './components/register/register.component';
 
 import { RegisterSpecialistComponent } from './components/register-specialist/register-specialist.component';
 import { RegisterKidComponent } from './components/register-kid/register-kid.component';
-import { RegisterParentComponent } from './components/register-parent/register-parent.component';
+import { RegisterParentComponent } from './components/parent/register-parent/register-parent.component';
+import { HomeParentComponent } from './components/parent/home-parent/home-parent.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegisterParentComponent } from './components/register-parent/register-p
     RegisterComponent,
     RegisterSpecialistComponent,
     RegisterKidComponent,
-    RegisterParentComponent
+    RegisterParentComponent,
+    HomeParentComponent
   ],
   imports: [
     BrowserModule,
