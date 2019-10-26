@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SpecialistModel } from 'src/app/models/specialist.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-register-specialist',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterSpecialistComponent implements OnInit {
 
-  constructor() { }
+  specialist:SpecialistModel;
+
+  constructor() {
+
+    this.specialist = new SpecialistModel();
+
+   }
 
   ngOnInit() {
   }
+
+  onSubmitSpecialist(form:NgForm){
+    console.log(this.specialist);
+  } 
 
 }

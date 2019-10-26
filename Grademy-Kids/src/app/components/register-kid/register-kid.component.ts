@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { KidModel } from 'src/app/models/kid.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-register-kid',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterKidComponent implements OnInit {
 
-  constructor() { }
+  kid: KidModel;
+
+  constructor() {
+
+    this.kid = new KidModel()
+
+   }
 
   ngOnInit() {
+  }
+
+  onSubmitKid(form: NgForm){
+    console.log(this.kid)
   }
 
 }

@@ -23,8 +23,8 @@ const routes: Routes = [
   {path: 'register-parent', component: RegisterParentComponent},
   {path: 'register-specialist', component: RegisterSpecialistComponent},
   {path: 'profile', component: ProfileComponent},
-  { path: '', pathMatch: 'full', redirectTo: 'home',  },
-  { path: '**', pathMatch: 'full', redirectTo: 'home',}
+  { path: '', pathMatch: 'full', redirectTo: 'login',  },
+  { path: '**', pathMatch: 'full', redirectTo: 'login',}
 
 ];
 

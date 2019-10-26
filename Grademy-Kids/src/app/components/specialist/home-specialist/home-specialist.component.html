@@ -10,15 +10,13 @@
             alt="profile photo"
           />
         </div>
-        <h6><strong class="dark-purple">Camila Bernal</strong></h6>
-        <p>Psicologa</p>
+        <h6><strong class="dark-purple">{{specialist.name}} {{specialist.lastname}}</strong></h6>
+        <p>{{specialist.career}}</p>
       </div>
       <div class="description my-3  p-3 red">
         <h6><strong class="dark-purple">Información</strong></h6>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugit
-          iusto vel, quasi explicabo, unde, aspernatur at laudantium quos quae
-          nulla porro veritatis id alias odio est voluptate? Vel, ex.
+         {{specialist.description}}
         </p>
       </div>
       
@@ -45,13 +43,13 @@
             <div class="carrousel red my-3 p-3">
                     <h6><strong class="dark-purple">Imágenes por revisar</strong></h6>
                     <div class="draws-container p-2 row">
-                      <div class="draw" *ngFor="let item of [1,1,1,1,11,1,1,1,1,1]">
+                      <div class="draw" *ngFor="let item of todo">
                           <div class="col-3 my-3">
                                 <img
                                      
                                      style="width: 100px;
                                        box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.35);"
-                                     src="assets/img/kids-draw.jpg"
+                                     src="{{item.img}}"
                                      alt="draw"
                                    />
                           </div>

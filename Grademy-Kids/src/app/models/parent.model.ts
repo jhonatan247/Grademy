@@ -1,5 +1,6 @@
 export class ParentModel{
     name:string;
+    email:string;
     lastname:string;
-    age:string;
+    password:string
 }

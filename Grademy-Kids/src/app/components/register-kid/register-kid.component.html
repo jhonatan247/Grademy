@@ -15,6 +15,7 @@
                 </div>
               </a>
                 <form
+                  #kidform = "ngForm"
                   novalidate
                   class="content "
                 >
@@ -24,10 +25,10 @@
                         <input
                           required
                           ngModel
-                          name="email"
+                          name="name"
                           class="form-control"
-                          placeholder="Correo electronico"
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                          placeholder="Nombre"
+                          [(ngModel)]="kid.name"
                           id="email"
                    
                         />
@@ -36,11 +37,11 @@
                         <input
                           required
                           ngModel
-                          name="email"
+                          name="nickname"
                           class="form-control"
-                          placeholder="Correo electronico"
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                          id="email"
+                          placeholder="nickname"
+                          [(ngModel)]="kid.nickname"
+                          id="nickname"
                    
                         />
                       </div>
@@ -48,11 +49,11 @@
                         <input
                           required
                           ngModel
-                          name="email"
+                          name="edad"
                           class="form-control"
                           placeholder="Correo electronico"
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                          id="email"
+                          [(ngModel)]="kid.edad"
+                          id="edad"
                    
                         />
                       </div>
@@ -63,7 +64,7 @@
                           minlength="6"
                           ngModel
                           name="password"
-                       
+                          [(ngModel)]="kid.password"
                           class="form-control"
                           placeholder="contraseña"
                           type="password"
@@ -75,9 +76,10 @@
     
                       <div class="button-container my-4">
                          <button
+                         (click)="onSubmitKid(kidform)"
                          class="btn btn-lg btn-primary full-width"
                          style="background-color: #542E78; border: none"
-                       >Iniciar sesión
+                       >Registrarse
                        </button>
                      
                          <p class="mt-3" >

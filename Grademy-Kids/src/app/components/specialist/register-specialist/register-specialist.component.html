@@ -1,9 +1,9 @@
 <div class="row display-flex ">
         <div
-          class="col col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12 image-login animated bounceInUp"
+          class="col col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12 image-login "
         ></div>
         <div
-          class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 "
+          class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 animated bounceInUp"
           style="background-color: #f8f8f8;"
         >
           <div class="login-form px-5 py-5" >
@@ -15,6 +15,7 @@
                 </div>
               </a>
                 <form
+                  #specialistform = "ngForm"
                   novalidate
                   class="content "
                 >
@@ -24,11 +25,48 @@
                         <input
                           required
                           ngModel
-                          name="email"
+                          name="name"
                           class="form-control"
-                          placeholder="Correo electronico"
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                          id="email"
+                          placeholder="Nombre"
+                          [(ngModel)]="specialist.name"
+                          id="name"
+                   
+                        />
+                      </div>
+                      <div class="form-group ">   
+                        <textarea
+                        rows=3
+                          required
+                          ngModel
+                          name="description"
+                          class="form-control"
+                          placeholder="Descripción"
+                          [(ngModel)]="specialist.description"
+                          id="description"
+                   
+                        ></textarea>
+                      </div>
+                      <div class="form-group ">   
+                        <input
+                          required
+                          ngModel
+                          name="career"
+                          class="form-control"
+                          placeholder="Profesión"
+                          [(ngModel)]="specialist.career"
+                          id="career"
+                   
+                        />
+                      </div>
+                      <div class="form-group ">   
+                        <input
+                          required
+                          ngModel
+                          name="lastname"
+                          class="form-control"
+                          placeholder="Apellido"
+                          [(ngModel)]="specialist.lastname"
+                          id="lastname"
                    
                         />
                       </div>
@@ -37,18 +75,7 @@
                           required
                           ngModel
                           name="email"
-                          class="form-control"
-                          placeholder="Correo electronico"
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                          id="email"
-                   
-                        />
-                      </div>
-                      <div class="form-group ">   
-                        <input
-                          required
-                          ngModel
-                          name="email"
+                          [(ngModel)]="specialist.email"
                           class="form-control"
                           placeholder="Correo electronico"
                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
@@ -63,7 +90,7 @@
                           minlength="6"
                           ngModel
                           name="password"
-                       
+                          [(ngModel)]="specialist.password"
                           class="form-control"
                           placeholder="contraseña"
                           type="password"
@@ -75,9 +102,10 @@
     
                       <div class="button-container my-4">
                          <button
+                         (click) ="onSubmitSpecialist(specialistform)"
                          class="btn btn-lg btn-primary full-width"
                          style="background-color: #542E78; border: none"
-                       >Iniciar sesión
+                       >Registrarse
                        </button>
                      
                          <p class="mt-3" >
