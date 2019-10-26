@@ -12,21 +12,14 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   kid: KidModel;
-  parent: ParentModel;
-  specialist: SpecialistModel;
-  iskid: boolean;
-  isparent: boolean;
-  isspecialist: boolean;
+
+ 
 
 
   constructor() { 
     this.kid = new KidModel();
-    this.parent = new ParentModel();
-    this.specialist = new SpecialistModel();
-    this.iskid = true;
-    this.isparent = false;
-    this.isspecialist = false;
 
+ 
   }
 
   ngOnInit() {
@@ -39,13 +32,11 @@ export class LoginComponent implements OnInit {
     
   }
 
-  onSubmitparent(form: NgForm){
-    console.log(this.parent);
-    
 
-  }
-  onSubmitspecialist(form: NgForm){
-    console.log(this.specialist)
+ 
+
+  parents(){
+    
   }
 
 }

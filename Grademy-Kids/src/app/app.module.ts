@@ -17,6 +17,8 @@ import { RegisterParentComponent } from './components/parent/register-parent/reg
 import { HomeParentComponent } from './components/parent/home-parent/home-parent.component';
 import { ReportComponent } from './components/parent/report/report.component';
 import { HomeSpecialistComponent } from './components/specialist/home-specialist/home-specialist.component';
+import { LoginSpecialistComponent } from './components/specialist/login-specialist/login-specialist.component';
+import { LoginParentComponent } from './components/parent/login-parent/login-parent.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HomeSpecialistComponent } from './components/specialist/home-specialist
     RegisterParentComponent,
     HomeParentComponent,
     ReportComponent,
-    HomeSpecialistComponent
+    HomeSpecialistComponent,
+    LoginSpecialistComponent,
+    LoginParentComponent
   ],
   imports: [
     BrowserModule,

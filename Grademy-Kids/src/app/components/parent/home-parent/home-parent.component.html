@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar [name]=parent.name></app-navbar>
 <div class="container animated fadeIn">
   <div class="row">
     <div class="col-6  fulltext-center ">
@@ -72,10 +72,10 @@
         <div id="chartContainer" style="height: 370px; width: 100%;"></div>
       </div>
 
-      <div class="general-description my-3 p-3 red text-center">
+      <div class="general-description my-3 p-3 red text-justify">
           <h6 class="dark-purple"><strong>Análisis</strong></h6>
-        <p *ngFor="let item of analisis">
-         {{item}}
+        <p >
+            La barra azul representa el valor que tiene su hijo/a con respecto a la media, si la barra azul es mas alta que la barra roja, esto significa que el valor esta por encima del niño promedio y se recomienda potenciar dicha área de estudio, en caso de estar por debajo se recomienda explorar otras áreas con el fin de encontrar posibles talentos o interes...
         </p>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent"

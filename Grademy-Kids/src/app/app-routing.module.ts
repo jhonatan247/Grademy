@@ -10,6 +10,8 @@ import { RegisterSpecialistComponent } from './components/specialist/register-sp
 import { HomeParentComponent } from './components/parent/home-parent/home-parent.component';
 import { ReportComponent } from './components/parent/report/report.component';
 import { HomeSpecialistComponent } from './components/specialist/home-specialist/home-specialist.component';
+import { LoginSpecialistComponent } from './components/specialist/login-specialist/login-specialist.component';
+import { LoginParentComponent } from './components/parent/login-parent/login-parent.component';
 
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path: 'home-specialist', component: HomeSpecialistComponent},
   {path: 'report/:id', component: ReportComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'login-specialist', component: LoginSpecialistComponent},
+  {path: 'login-parent', component: LoginParentComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'register-kid', component: RegisterKidComponent },
   {path: 'register-parent', component: RegisterParentComponent},

@@ -23,10 +23,10 @@ export class HomeSpecialistComponent implements OnInit {
 
   getData(){
     this.specialist = {
-      name:"Camila",
+      name:"Valentina",
       lastname:"Bernal",
       email:"correo@gmail.com",
-      description:"descripcion",
+      description:"La psicologia es una",
       password:"password",
       career:"Psicología"
     }
