@@ -19,6 +19,7 @@ import { ReportComponent } from './components/parent/report/report.component';
 import { HomeSpecialistComponent } from './components/specialist/home-specialist/home-specialist.component';
 import { LoginSpecialistComponent } from './components/specialist/login-specialist/login-specialist.component';
 import { LoginParentComponent } from './components/parent/login-parent/login-parent.component';
+import { HomeKidsComponent } from './components/home-kids/home-kids.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoginParentComponent } from './components/parent/login-parent/login-par
     ReportComponent,
     HomeSpecialistComponent,
     LoginSpecialistComponent,
-    LoginParentComponent
+    LoginParentComponent,
+    HomeKidsComponent
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,7 @@ import { LoginParentComponent } from './components/parent/login-parent/login-par
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
+  {path: 'drawing', component: HomeComponent},
   {path: 'home-parent', component: HomeParentComponent},
   {path: 'home-specialist', component: HomeSpecialistComponent},
   {path: 'report/:id', component: ReportComponent},

@@ -6,8 +6,17 @@
             alt="">
         
         </div>
-        <div class="name">
+        <div class="name" *ngIf="name">
             {{name}}
         </div>
+        <div class="name" *ngIf="!name">
+            Camila
+        </div>
+        <div class="d-flex "
+        [routerLink]="['/login']"  
+        style="justify-content: center;
+        align-items: center;
+        color: #fff;"><i class=" ml-2  mr-4 fas fa-window-close"></i></div>
+
     </div>
 </section>

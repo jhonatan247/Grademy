@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SpecialistModel } from 'src/app/models/specialist.model';
-import { PassThrough } from 'stream';
+
 
 @Component({
   selector: 'app-home-specialist',
@@ -26,7 +26,7 @@ export class HomeSpecialistComponent implements OnInit {
       name:"Valentina",
       lastname:"Bernal",
       email:"correo@gmail.com",
-      description:"La psicologia es una",
+      description:"La psicologia es una rama que involucra el estudio numeros factores que son parte del comportamiento de los niños y es interante conocer como el  analisis de estos nos puede llevar a conocerlos mejor.  ",
       password:"password",
       career:"Psicología"
     }
